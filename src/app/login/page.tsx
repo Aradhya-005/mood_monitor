@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Image from "next/image"; 
 import { Spotlight } from "@/components/ui/Spotlight";
 import Link from "next/link";
 import { Label } from "@/components/ui/label";
@@ -7,11 +8,6 @@ import { Input } from "@/components/ui/input";
 import { cn } from "@/utils/cn";
 
 
-import {
-  IconBrandGithub,
-  IconBrandGoogle,
-  IconBrandOnlyfans,
-} from "@tabler/icons-react";
 
 function page() {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -22,7 +18,13 @@ function page() {
   return (
     <div className=" flex flex-row justify-center  h-screen">
         <div className="items-center justify-center flex flex-col gap-2">
-        <img className=" ml-60 h-96 " src="/images/brain.jpg" alt="" />
+        <Image
+          className="ml-60 h-96"
+          src="/images/brain-2.png"
+          alt="Brain"
+           width={400}
+           height={600}
+        />
         </div>
    
     <div className="max-w-md w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-4 mt-28 shadow-input  bg-white dark:bg-black">
@@ -56,7 +58,10 @@ function page() {
           className="bg-gradient-to-br relative group/btn from-black dark:from-zinc-900 dark:to-zinc-900 to-neutral-600 block dark:bg-zinc-800 w-full text-white rounded-md h-10 font-medium shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] dark:shadow-[0px_1px_0px_0px_var(--zinc-800)_inset,0px_-1px_0px_0px_var(--zinc-800)_inset]"
           type="submit"
         >
+          <Link href="/dashboard">
           Sign In &rarr;
+            </Link> 
+         
           <BottomGradient />
         </button>
 

@@ -5,13 +5,9 @@ import Link from "next/link";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { cn } from "@/utils/cn";
+import Image from "next/image"; 
 
 
-import {
-  IconBrandGithub,
-  IconBrandGoogle,
-  IconBrandOnlyfans,
-} from "@tabler/icons-react";
 
 function page() {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -22,8 +18,13 @@ function page() {
   return (
     <div className=" flex flex-row justify-center  h-screen">
         <div className="items-center justify-center flex flex-col gap-2">
-        <img className=" ml-60 h-96 " src="/images/brain.jpg" alt="" />
-        </div>
+        <Image
+          className="ml-60 h-96"
+          src="/images/brain.jpg"
+          alt="Brain"
+          width={384} 
+          height={384} 
+        />        </div>
    
     <div className="max-w-md w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-4 mt-28 shadow-input  bg-white dark:bg-black">
       <Spotlight
