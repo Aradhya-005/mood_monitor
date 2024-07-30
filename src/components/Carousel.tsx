@@ -3,7 +3,7 @@ import React, { ReactNode } from 'react';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import './Carousel.css';  // Import your CSS file for custom styles
+import './carousel.css';  // Import your CSS file for custom styles
 
 interface CarouselProps {
   children: ReactNode;
