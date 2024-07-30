@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import Carousel from '@/components/Carousel';
 
+
 interface Mood {
   id: number;
   src: string;
@@ -47,8 +48,13 @@ const MoodTracker: React.FC = () => {
           </div>
         ))}
       </Carousel>
-      <h1 className="text-2xl font-bold">How do you feel today?</h1>
-      {selectedMood && <p className="text-lg">You selected: {selectedMood.label}</p>}
+      <h1 className="text-2xl font-bold mt-6">How do you feel today?</h1>
+      {selectedMood && (
+        <div className="mt-4">
+          <p className="text-lg">You selected: {selectedMood.label}</p>
+          
+        </div>
+      )}
     </div>
   );
 };
