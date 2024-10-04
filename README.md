@@ -1,20 +1,12 @@
-# Next.js
+# Mental Health web app
 
-A basic Next.js app with a Dockerfile and compose.yaml ready to deploy to AWS with [Defang](https://defang.io).
+## Overview
 
-## Steps
+This website helps individuals check their stress, anxiety, depression, and other emotional levels. It features an easy-to-use interface for measuring these levels and provides personalized advice to help users feel better. With Firebase authentication, users can log in securely and access their profiles.
 
-1. [Install Defang](https://docs.defang.io/docs/getting-started/installing)
-2. [Authenticate with Defang](https://docs.defang.io/docs/getting-started/authenticating)
-3. (optional) [Authenticate with AWS](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html)
-4. Run `defang compose up` in the root of this project
+## Technologies Used
 
----
+- **Frontend**: Next.js
+- **UI Framework**: Accertainty UI
 
-Title: Next.js
 
-Short Description: A basic Next.js app.
-
-Tags: next.js, react, docker, aws
-
-Languages: nodejs, typescript
